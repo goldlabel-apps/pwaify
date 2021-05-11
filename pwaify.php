@@ -7,9 +7,9 @@
  *
  * @wordpress-plugin
  * Plugin Name: @PWAify
- * Plugin URI:  https://github.com/listingslab-software/toolkit
+ * Plugin URI:  https://github.com/listingslab-software/pwaify
  * Description: Brings Progressive Web App (PWA) capabilities to WprdPress
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      Forked from PWA
  * Author URI:  https://github.com/GoogleChromeLabs/pwa-wp/graphs/contributors
  * Text Domain: pwaify
@@ -17,8 +17,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-define( 'PWAIFY_VERSION', '1.0.2' );
-
+define( 'PWAIFY_VERSION', '1.0.3' );
 define( 'PWAIFY_PLUGIN_FILE', __FILE__ );
 define( 'PWAIFY_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'PWAIFY_WORKBOX_VERSION', '5.1.4' );
@@ -73,7 +72,7 @@ function _pwaify_incorrect_plugin_slug_admin_notice() {
 	</div>
 	<?php
 }
-if ( 'listingslab-pwaify' !== basename( PWAIFY_PLUGIN_DIR ) ) {
+if ( 'pwaify' !== basename( PWAIFY_PLUGIN_DIR ) ) {
 	add_action( 'admin_notices', '_pwaify_incorrect_plugin_slug_admin_notice' );
 }
 
@@ -98,7 +97,7 @@ function _pwaify_print_build_needed_notice() {
 	<?php
 }
 if ( ! file_exists( PWAIFY_PLUGIN_DIR . '/wp-includes/js/workbox-v' . PWAIFY_WORKBOX_VERSION ) || ! file_exists( PWAIFY_PLUGIN_DIR . '/wp-includes/js/workbox-v' . PWAIFY_WORKBOX_VERSION . '/workbox-sw.js' ) ) {
-	add_action( 'admin_notices', '_pwaify_print_build_needed_notice' );
+	//add_action( 'admin_notices', '_pwaify_print_build_needed_notice' );
 	return;
 }
 
