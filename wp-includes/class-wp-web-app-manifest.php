@@ -76,7 +76,7 @@ final class WP_Web_App_Manifest {
 		<!-- Listingslab Hacked -->
 
 		<link rel="manifest" href="/manifest.json">
-		<meta name="theme-color" content="#ff7f27">
+		<meta name="theme-color" content="#ffffff">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-touch-fullscreen" content="YES">
@@ -86,7 +86,7 @@ final class WP_Web_App_Manifest {
 			$icon = array_shift( $icons );
 		?>
 		<?php if ( ! empty( $icon ) ) : ?>
-			<link rel="apple-touch-startup-image" href="/512.png">
+			<link rel="apple-touch-startup-image" href="/logo.png">
 		<?php endif; ?>
 
 		<?php $name = isset( $manifest['short_name'] ) ? $manifest['short_name'] : $manifest['name']; ?>
