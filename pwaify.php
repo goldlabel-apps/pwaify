@@ -9,7 +9,7 @@
  * Plugin Name: @PWAify
  * Plugin URI:  https://github.com/listingslab-software/pwaify
  * Description: Brings Progressive Web App (PWA) capabilities to WprdPress
- * Version:     1.0.5
+ * Version:     1.0.6
  * Author:      Forked from PWA
  * Author URI:  https://github.com/GoogleChromeLabs/pwa-wp/graphs/contributors
  * Text Domain: pwaify

@@ -17,7 +17,7 @@ final class WP_Web_App_Manifest {
 	 *
 	 * @var string
 	 */
-	const FALLBACK_THEME_COLOR = '#fff';
+	const FALLBACK_THEME_COLOR = '#126970';
 
 	/**
 	 * The REST API namespace for the manifest request.
@@ -76,7 +76,7 @@ final class WP_Web_App_Manifest {
 		<!-- Listingslab Hacked -->
 
 		<link rel="manifest" href="/manifest.json">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="theme-color" content="#126970">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-touch-fullscreen" content="YES">
@@ -86,7 +86,7 @@ final class WP_Web_App_Manifest {
 			$icon = array_shift( $icons );
 		?>
 		<?php if ( ! empty( $icon ) ) : ?>
-			<link rel="apple-touch-startup-image" href="/logo.png">
+			<link rel="apple-touch-startup-image" href="/logo512.png">
 		<?php endif; ?>
 
 		<?php $name = isset( $manifest['short_name'] ) ? $manifest['short_name'] : $manifest['name']; ?>
