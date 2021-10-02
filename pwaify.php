@@ -6,18 +6,16 @@
  * @license      GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name: @PWAify
+ * Plugin Name: PWAify
  * Plugin URI:  https://github.com/listingslab-software/pwaify
- * Description: Brings Progressive Web App (PWA) capabilities to WprdPress
- * Version:     1.0.7
- * Author:      Forked from PWA
- * Author URI:  https://github.com/GoogleChromeLabs/pwa-wp/graphs/contributors
+ * Description: Brings Progressive WordPress App (PWA) capabilities to WordPress
+ * Version:     1.1.0
  * Text Domain: pwaify
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-define( 'PWAIFY_VERSION', '1.0.5' );
+define( 'PWAIFY_VERSION', '1.1.0' );
 define( 'PWAIFY_PLUGIN_FILE', __FILE__ );
 define( 'PWAIFY_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'PWAIFY_WORKBOX_VERSION', '5.1.4' );

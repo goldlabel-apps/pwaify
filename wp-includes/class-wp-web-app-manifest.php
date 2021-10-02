@@ -72,19 +72,11 @@ final class WP_Web_App_Manifest {
 	public function manifest_link_and_meta() {
 		$manifest = $this->get_manifest();
 		?>
-		
-		<!-- Listingslab Hacked -->
-
+		<!-- Listingslab Hack -->
 		<link rel="manifest" href="/manifest.json">
-		<meta name="theme-color" content="#FFFFFF">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-touch-fullscreen" content="YES">
-		<?php
-			$icons = isset( $manifest['icons'] ) ? $manifest['icons'] : array();
-			usort( $icons, array( $this, 'sort_icons_callback' ) );
-			$icon = array_shift( $icons );
-		?>
 		<meta name="apple-mobile-web-app-title" content="<?php echo esc_attr( $name ); ?>">
 		<meta name="application-name" content="<?php echo esc_attr( $name ); ?>">
 		<?php

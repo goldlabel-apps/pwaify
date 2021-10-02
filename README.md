@@ -1,18 +1,17 @@
-=== Listingslab @PWAify ===
+=== PWAify ===
 
 Contributors:      google, xwp, westonruter, albertomedina, listingslab
-Tags:              pwa, progressive web apps, service workers, web app manifest, https
-Stable tag: 	   1.0.6
+Tags:              pwa, progressive wordpress app, service workers, web app manifest, https
+Stable tag: 	   1.1.0
 Requires at least: 5.5
 Tested up to:      5.6
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP:      5.6
 
+> Forked by listingslab as pwaify, 17th March 2021
 
-> Forked by listingslab as PWAify, 17th March 2021
-
-WordPress feature plugin to bring Progressive Web App (PWA) capabilities to Core
+WordPress feature plugin to bring Progressive WordPress App (PWA) capabilities to Core
 
 == Description ==
 

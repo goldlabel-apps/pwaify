@@ -1,0 +1,33 @@
+#!/bin/bash
+# chmod ug+x create-zip
+# clear
+
+echo 'Creating WordPress Plugin zip...'
+
+# Remove the last plugin from the Open Source repo
+rm -rf ~/Desktop/SERVE/GitHub/listingslab-download/wordpress/plugins/pwaify.zip
+
+# Remove the temp directory from last time
+rm -rf ~/PWAIFY
+
+# Create temp folder if it doesn't exist
+mkdir ~/PWAIFY/
+
+# Copy the entire source directory into the temp folder
+cp -r ~/Desktop/SERVE/Node/pwaify ~/PWAIFY/pwaify
+
+# Clean out anything the plugin zip should not have
+rm -rf ~/PWAIFY/pwaify/.git
+rm -rf ~/PWAIFY/pwaify/unix
+
+# Make sure we're in the correct directory
+cd ~/PWAIFY 
+
+# Zip up the plugin
+zip -r pwaify.zip pwaify
+
+# Move the zip file to the Open Source repo 
+mv pwaify.zip ~/Desktop/SERVE/GitHub/listingslab-download/wordpress/plugins
+
+# Clean temp folder
+rm -rf ~/PWAIFY/pwaify
